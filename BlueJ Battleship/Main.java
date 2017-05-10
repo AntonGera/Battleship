@@ -21,26 +21,11 @@ public class Main
             System.out.println();
         }
         System.out.println();
-        /*
-        bor.setShip(1, 1, 0, "Battleship");
-        bor.setShip(4, 4, 1, "Submarine");
-        System.out.println(bor.setShip(6, 6, 0, "Carrier"));
-        System.out.println(bor.setShip(6,6,0, "Patrol Boat")); //Test to see if you can place a ship on another ship
-        System.out.println(bor.setShip(10,10,0, "Battleship")); //Test to see if you can place a ship off array
-        System.out.println(bor.rotateShip(4,4));
-        System.out.println(bor.rotateShip(6,6));
-        System.out.println(bor.receiveAttack(1,1));
-        System.out.println(bor.receiveAttack(2,1));
-        System.out.println(bor.receiveAttack(3,1));
-        System.out.println(bor.receiveAttack(4,1));
-        System.out.println(bor.receiveAttack(5,1));
-        System.out.println(bor.receiveAttack(6,1));
-        System.out.println(bor.receiveAttack(2,2));
-        */
         for(int x = 0; x < 5; x++)
         {
             System.out.println("Please type a X cord.");
             xCord = con.readInt();
+            
             System.out.println("Please type a Y cord.");
             yCord = con.readInt();
             System.out.println("Please type 0 for Horizontal and 1 for Vertical");
