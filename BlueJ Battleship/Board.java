@@ -29,9 +29,22 @@ public abstract class Board
         for(int row = 0; row < myHeight; row++)
             for(int col = 0; col < myWidth; col++)
                 myBoard[row][col] = new Water();
-    }
-
-
+    }        
+    public boolean isEmpty()
+    {
+        boolean empt = true;
+        for(int x = 0; x < myHeight; x++)
+        {
+            for(int y = 0; y < myWidth; y++)
+            {
+                if(myBoard[x][y].getType().equals("ship") || myBoard[x][y].getType().equals("hull") || myBoard[x][y].getType().equals("head"))
+                {
+                    empt = false;
+                }
+            }
+        }
+        return empt;
+    }      
     public String displaySpot(int x, int y)
     {
         return myBoard[y][x].toString();
